@@ -18,32 +18,31 @@ generateBtn.addEventListener("click", writePassword);
 
 function generatePassword() {
 
-    // Defining all possibilities
+    // Character Arrays
       var upperCaseArray =  ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
       var lowerCaseArray =  ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
       var specialCharacterArray = ["!", "@", "#", "$", "%", "&", "*"];
       var numericCharacterArray = [ "0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
 
-    // will combine elements depending on user input
-
+    // will combine elements depending on user input (all possible variables)
       var allCharactersArray = [];
 
     // the final result variable
       var password = "";
 
-    // start of prompts
+    // Prompt
       var passwordLength = prompt(
         "How many characters? Must be between 8 and 128 Characters."
       );
 
-      // make sure the length is between 8 and 128 characters
+      // make sure the length is between 8 and 128 characters. if not run prompt again
 
-      while (passwordLength < 8 || passwordLength > 128) {
+      if (passwordLength < 8 || passwordLength > 128) {
         window.alert("Please enter a number between 8 and 128.");
         var passwordLength = prompt(
           "How many characters? Must be between 8 and 128 Characters."
         );
-      }
+      } 
     // defining password requirements
         var lowerCase = confirm("Do you want to include lower case characters?");
         var upperCase = confirm("Do you want to include upper case characters?");
@@ -74,20 +73,12 @@ function generatePassword() {
    // for loop to generate random password
       for (var i = 0; i<passwordLength; i++) {
         var randomCharacter = allCharactersArray[Math.floor(Math.random()*allCharactersArray.length)];
-        
         password = password + randomCharacter
 
       }
 
-      console.log(password)
-      return password;
 
-      
-      // if (passwordLength === password.length) {
-      //   return password;
-      // }
-
-      // make sure at least one variable is chosen
+ // make sure at least one variable is chosen
       if (
         special === false &&
         numeric === false &&
@@ -97,13 +88,24 @@ function generatePassword() {
         alert("Error: You must select at least one character type");
       }
 
-      // Write password to text area
+
+      console.log(password)
+      return password;
+      
+
+      
+      // if (passwordLength === password.length) {
+      //   return password;
+      // }
+
+     
+     
+
+    
 
 
 
 }
-
-
 
 
 
