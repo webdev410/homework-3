@@ -4,6 +4,7 @@ var generateBtn = document.querySelector("#generate");
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
+
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
@@ -12,11 +13,12 @@ function writePassword() {
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
-// MY CODE
 
-// FUNCTION START !!!!!!!!!!!!************
+
+// FUNCTION 
 
 function generatePassword() {
+
 
     // Character Arrays
       var upperCaseArray =  ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
@@ -89,19 +91,15 @@ function generatePassword() {
       }
 
 
-      console.log(password)
-      return password;
-      
 
-      
-      // if (passwordLength === password.length) {
-      //   return password;
-      // }
+      // output password
+       console.log(password)
+
+     return password;
 
      
      
 
-    
 
 
 
@@ -111,8 +109,3 @@ function generatePassword() {
 
 // end of function
 
-// Length of password between 8 and 128 characters
-// Character Types Lowercase, Uppercase, numeric, and/or Special Characters
-// Validate that at least one character type was selected
-// Password matches selected criteria
-// Display the password in the box
