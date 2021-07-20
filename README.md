@@ -12,3 +12,11 @@ The randomly generated password will display in the textarea on the page.
 ## Screenshot
 
 ![portfolio demo](screenshot.png)
+
+##Technologies Used
+* HTML
+* CSS
+* Javascript
+
+##Developer Contact Info
+webdev410@gmail.com
