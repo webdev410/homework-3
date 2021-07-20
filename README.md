@@ -5,7 +5,7 @@ This is the third homework assignment from the Johns Hopkins Coding Bootcamp. Th
 
 The randomly generated password will display in the textarea on the page.
 
-#Link to Site
+# Link to Site
 [Click Here ](https://webdev410.github.io/homework-3/)
 
 
@@ -13,10 +13,10 @@ The randomly generated password will display in the textarea on the page.
 
 ![portfolio demo](screenshot.png)
 
-##Technologies Used
+## Technologies Used
 * HTML
 * CSS
 * Javascript
 
-##Developer Contact Info
+## Developer Contact Info
 webdev410@gmail.com
