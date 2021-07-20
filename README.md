@@ -1,4 +1,4 @@
-# homework-3 JHU Bootcamp | Andrew Keiser
+#Password Generator
 
 ## Description
 This is the third homework assignment from the Johns Hopkins Coding Bootcamp. The objective is to create a randomly generated password depending on user input. The application will first ask for the desired password length. It will then prompt for lowercase, uppercase, numbers and finally special characters. 
