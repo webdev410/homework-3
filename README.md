@@ -5,9 +5,10 @@ This is the third homework assignment from the Johns Hopkins Coding Bootcamp. Th
 
 The randomly generated password will display in the textarea on the page.
 
-# Link to Site
-[Click Here ](https://webdev410.github.io/homework-3/)
+## Links
+[Repo](https://github.com/webdev410/password-generator)
 
+   [Deployed](https://webdev410.github.io/password-generator/)
 
 ## Screenshot
 
